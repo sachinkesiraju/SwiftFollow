@@ -12,14 +12,16 @@ To add twitter sharing to your app:
 
 - Call the twitter follow method as follows:
 
-  @IBAction func followPressed(sender:AnyObject)
+````
+ @IBAction func followPressed(sender:AnyObject)
   {
   
     var twitterFollow:SwiftFollowViewController = SwiftFollowViewController()
     
     twitterFollow.followMethod("your_twitter_handle")
   }
-    
+  
+````  
 Once you've done that, simply hook up the action to a UIButton or the appropriate XIB. 
 
 If this helps you, please follow me on twitter @sachinkesiraju and let me know!
