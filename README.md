@@ -8,7 +8,11 @@ to implement.
 
 To add twitter sharing to your app:
 
-- Drag the SwiftFollowViewController.swift file into your app and add the social.framework and accounts.framework
+- Drag the SwiftFollow.swift file into your app and add the social.framework and accounts.framework
+```
+import Social
+import Accounts
+```
 
 - Call the twitter follow method as follows:
 
@@ -16,9 +20,9 @@ To add twitter sharing to your app:
  @IBAction func followPressed(sender:AnyObject)
   {
   
-    var twitterFollow:SwiftFollowViewController = SwiftFollowViewController()
+    var twitterFollow:SwiftFollow = SwiftFollow()
     
-    twitterFollow.followMethod("your_twitter_handle")
+    twitterFollow.follow("your_twitter_handle")
   }
   
 ````  
