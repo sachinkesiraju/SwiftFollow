@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     @IBAction func followPressed (sender:AnyObject)
     {
-        var twitterFollow:SwiftFollowViewController = SwiftFollowViewController()
-        twitterFollow.followMethod("sachinkesiraju")
+        var twitterFollow:SwiftFollow = SwiftFollow()
+        twitterFollow.follow("sachinkesiraju")
     }
                             
     override func viewDidLoad() {

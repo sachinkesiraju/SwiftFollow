@@ -1,8 +1,8 @@
 //
-//  SwiftFollowViewController.swift
-//  SwiftFollow
+//  SwiftFollow.swift
+//  SwiftFollowExample
 //
-//  Created by Sachin Kesiraju on 6/12/14.
+//  Created by Sachin Kesiraju on 9/6/14.
 //  Copyright (c) 2014 Sachin Kesiraju. All rights reserved.
 //
 
@@ -10,18 +10,18 @@ import UIKit
 import Accounts
 import Social
 
-class SwiftFollowViewController: UIViewController, UIAlertViewDelegate {
-    
+class SwiftFollow: NSObject {
+   
     var twitterhandle:NSString = ""
     
-    func followMethod (handle:NSString)
+    func follow(handle:NSString)
     {
         twitterhandle = handle
         var accountStore:ACAccountStore = ACAccountStore()
         var accountType:ACAccountType = accountStore.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
         accountStore.requestAccessToAccountsWithType(accountType, options: nil, completion:{(granted:Bool!, error:NSError!) in
             
-            if(granted)
+            if((granted) != nil)
             {
                 var accountsArray:NSArray = accountStore.accountsWithAccountType(accountType)
                 if(accountsArray.count > 0)
@@ -44,14 +44,13 @@ class SwiftFollowViewController: UIViewController, UIAlertViewDelegate {
                             alert.addButtonWithTitle("OK")
                             dispatch_async(dispatch_get_main_queue(), {
                                 alert.show()
-                            }
-                        )}
-                
-                        })
+                                }
+                            )}
+                        
+                    })
                 }
             }
             
-            })
+        })
     }
-
 }

@@ -12,7 +12,7 @@
 		03999E65194A20BA00871D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03999E63194A20BA00871D8F /* Main.storyboard */; };
 		03999E67194A20BA00871D8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03999E66194A20BA00871D8F /* Images.xcassets */; };
 		03999E73194A20BA00871D8F /* SwiftFollowExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999E72194A20BA00871D8F /* SwiftFollowExampleTests.swift */; };
-		03999E7D194A20F600871D8F /* SwiftFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03999E7C194A20F600871D8F /* SwiftFollowViewController.swift */; };
+		03F4BE1919BB2CFD00F8B356 /* SwiftFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F4BE1819BB2CFD00F8B356 /* SwiftFollow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		03999E6C194A20BA00871D8F /* SwiftFollowExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFollowExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03999E71194A20BA00871D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03999E72194A20BA00871D8F /* SwiftFollowExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFollowExampleTests.swift; sourceTree = "<group>"; };
-		03999E7C194A20F600871D8F /* SwiftFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFollowViewController.swift; sourceTree = "<group>"; };
+		03F4BE1819BB2CFD00F8B356 /* SwiftFollow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFollow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 				03999E5F194A20BA00871D8F /* AppDelegate.swift */,
 				03999E61194A20BA00871D8F /* ViewController.swift */,
 				03999E63194A20BA00871D8F /* Main.storyboard */,
-				03999E7C194A20F600871D8F /* SwiftFollowViewController.swift */,
+				03F4BE1819BB2CFD00F8B356 /* SwiftFollow.swift */,
 				03999E66194A20BA00871D8F /* Images.xcassets */,
 				03999E5D194A20BA00871D8F /* Supporting Files */,
 			);
@@ -211,9 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F4BE1919BB2CFD00F8B356 /* SwiftFollow.swift in Sources */,
 				03999E62194A20BA00871D8F /* ViewController.swift in Sources */,
 				03999E60194A20BA00871D8F /* AppDelegate.swift in Sources */,
-				03999E7D194A20F600871D8F /* SwiftFollowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +401,7 @@
 				03999E78194A20BA00871D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03999E79194A20BA00871D8F /* Build configuration list for PBXNativeTarget "SwiftFollowExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				03999E7B194A20BA00871D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
